@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: black;
+  height: 70px;
+}
+
+.navlink {
+  text-decoration: none;
+}
+
+.navbar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 60px;
+  font-family: 'Alegreya Sans SC';
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navbar__inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__inputs_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 257px;
+  height: 40px;
+  font-family: 'Alegreya Sans SC';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.navbar__inputs_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-family: 'Alegreya Sans SC';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  width: 205px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.card_list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 239px;
+  height: 143px;
+  border: 1px solid #DADADA;
+  padding: 17px;
+  margin: 16px;
+}
+
+.card__fullname {
+  width: 194px;
+  height: 23px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  text-transform: capitalize;
+}
+
+.card__city {
+  width: 99px;
+  height: 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.41);
+}
+
+
+.card_container_button__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  color: #fff;
+  width: 148px;
+  height: 35px;
+  background: #101010;
+  border: 1px solid #0D1E4B;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.user_card {
+  margin-top: 36px;
+  border: 1px solid #000000;
+}
+
+.user_card__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 53px 0 53px;
+}
+
+.user_card__title_name {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.user_card__title_name div {
+  width: 974px;
+  height: 40px;
+  font-family: 'Alegreya Sans SC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
+  padding-left: 10px;
+  border: 1px solid #000000;
+  border-top: none;
+  border-bottom: none;
+}
+
+.user_card__title_info {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000000;
+  max-height: 30px
+}
+.user_card__title_info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border-right: 1px solid #000000;
+}
+
+.user_card__title_info button:nth-child(even) {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  border-right: 1px white solid;
+  cursor: pointer;
+}
+.user_card__title_info button:nth-child(odd) {
+  background: black;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+.user_card__posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0;
+  border-top: 1px black solid;
+  padding: 10px 53px 33px 53px;
+}
+
+.user_card__posts_title {
+  margin: 20px;
+}
+
+.user_card__posts div:nth-child(1) {
+  font-family: 'Alegreya Sans SC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.user_card_posts__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.post_card {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 150px;
+  border: 1px black solid;
+  padding: 14px 39px 14px 39px;
+  margin: 0 19px 19px 0;
+}
+.post_card div:nth-child(2n){
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.41);
+}
+
+.post_card_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post_card_head div:nth-child(1) {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  text-transform: capitalize;
+}
+
+.post_card_head div:nth-child(2) {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.edit {
+  position: relative;
+  top: 20px;
+  left: 185px;
+  width: 83px;
+  height: 23px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container_inputs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 35px;
+  border: 1px solid black;
+  background: #e0f1ff;
+  border-radius: 3px;
+  z-index: 100;
+}
+
+.container_inputs input {
+  width: 300px;
+  padding: 4px;
+  margin: 10px;
+}
+.container_inputs textarea {
+  width: 300px;
+  padding: 4px;
+  margin: 10px;
+}
+.container_inputs button {
+  width: 100px;
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 3px;
+  margin: 10px;
+  cursor: pointer;
+}
